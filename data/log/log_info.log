@@ -1,0 +1,400 @@
+24-10-06.21:52:19.449 [main            ] INFO  Application            - Starting Application using Java 1.8.0_311 on andyings-MacBook-Pro.local with PID 45431 (/Users/andying/github/maloong-zhang/snowflake/target/classes started by andying in /Users/andying/github/maloong-zhang/snowflake)
+24-10-06.21:52:19.453 [main            ] INFO  Application            - No active profile set, falling back to 1 default profile: "default"
+24-10-06.21:52:20.390 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8080 (http)
+24-10-06.21:52:20.396 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8080"]
+24-10-06.21:52:20.397 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-10-06.21:52:20.397 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-10-06.21:52:20.592 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-10-06.21:52:20.593 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1066 ms
+24-10-06.21:52:20.694 [main            ] INFO  CuratorFrameworkImpl   - Starting
+24-10-06.21:52:20.703 [main            ] INFO  ZooKeeper              - Client environment:zookeeper.version=3.6.3--6401e4ad2087061bc6b9f80dec2d69f2e3c8660a, built on 04/08/2021 16:35 GMT
+24-10-06.21:52:20.703 [main            ] INFO  ZooKeeper              - Client environment:host.name=localhost
+24-10-06.21:52:20.703 [main            ] INFO  ZooKeeper              - Client environment:java.version=1.8.0_311
+24-10-06.21:52:20.703 [main            ] INFO  ZooKeeper              - Client environment:java.vendor=Oracle Corporation
+24-10-06.21:52:20.703 [main            ] INFO  ZooKeeper              - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_311.jdk/Contents/Home/jre
+24-10-06.21:52:20.703 [main            ] INFO  ZooKeeper              - Client environment:java.class.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_311.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_311.jdk/Contents/Home/jre/lib/deploy.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_311.jdk/Contents/Home/jre/lib/ext/cldrdata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_311.jdk/Contents/Home/jre/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_311.jdk/Contents/Home/jre/lib/ext/jaccess.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_311.jdk/Contents/Home/jre/lib/ext/jfxrt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_311.jdk/Contents/Home/jre/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_311.jdk/Contents/Home/jre/lib/ext/nashorn.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_311.jdk/Contents/Home/jre/lib/ext/sunec.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_311.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_311.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_311.jdk/Contents/Home/jre/lib/ext/zipfs.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_311.jdk/Contents/Home/jre/lib/javaws.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_311.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_311.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_311.jdk/Contents/Home/jre/lib/jfxswt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_311.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_311.jdk/Contents/Home/jre/lib/management-agent.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_311.jdk/Contents/Home/jre/lib/plugin.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_311.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_311.jdk/Contents/Home/jre/lib/rt.jar:/Users/andying/github/maloong-zhang/snowflake/target/classes:/Users/andying/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.7.12/spring-boot-starter-web-2.7.12.jar:/Users/andying/.m2/repository/org/springframework/boot/spring-boot-starter/2.7.12/spring-boot-starter-2.7.12.jar:/Users/andying/.m2/repository/org/springframework/boot/spring-boot/2.7.12/spring-boot-2.7.12.jar:/Users/andying/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.7.12/spring-boot-autoconfigure-2.7.12.jar:/Users/andying/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.7.12/spring-boot-starter-logging-2.7.12.jar:/Users/andying/.m2/repository/ch/qos/logback/logback-classic/1.2.12/logback-classic-1.2.12.jar:/Users/andying/.m2/repository/ch/qos/logback/logback-core/1.2.12/logback-core-1.2.12.jar:/Users/andying/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.17.2/log4j-to-slf4j-2.17.2.jar:/Users/andying/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.2/log4j-api-2.17.2.jar:/Users/andying/.m2/repository/org/slf4j/jul-to-slf4j/1.7.36/jul-to-slf4j-1.7.36.jar:/Users/andying/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/Users/andying/.m2/repository/org/yaml/snakeyaml/1.30/snakeyaml-1.30.jar:/Users/andying/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.7.12/spring-boot-starter-json-2.7.12.jar:/Users/andying/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.5/jackson-databind-2.13.5.jar:/Users/andying/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.5/jackson-annotations-2.13.5.jar:/Users/andying/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.5/jackson-core-2.13.5.jar:/Users/andying/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.13.5/jackson-datatype-jdk8-2.13.5.jar:/Users/andying/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.5/jackson-datatype-jsr310-2.13.5.jar:/Users/andying/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.13.5/jackson-module-parameter-names-2.13.5.jar:/Users/andying/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.7.12/spring-boot-starter-tomcat-2.7.12.jar:/Users/andying/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.75/tomcat-embed-core-9.0.75.jar:/Users/andying/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.75/tomcat-embed-el-9.0.75.jar:/Users/andying/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.75/tomcat-embed-websocket-9.0.75.jar:/Users/andying/.m2/repository/org/springframework/spring-web/5.3.27/spring-web-5.3.27.jar:/Users/andying/.m2/repository/org/springframework/spring-beans/5.3.27/spring-beans-5.3.27.jar:/Users/andying/.m2/repository/org/springframework/spring-webmvc/5.3.27/spring-webmvc-5.3.27.jar:/Users/andying/.m2/repository/org/springframework/spring-aop/5.3.27/spring-aop-5.3.27.jar:/Users/andying/.m2/repository/org/springframework/spring-context/5.3.27/spring-context-5.3.27.jar:/Users/andying/.m2/repository/org/springframework/spring-expression/5.3.27/spring-expression-5.3.27.jar:/Users/andying/.m2/repository/org/apache/curator/curator-recipes/5.2.0/curator-recipes-5.2.0.jar:/Users/andying/.m2/repository/org/apache/curator/curator-framework/5.2.0/curator-framework-5.2.0.jar:/Users/andying/.m2/repository/org/apache/curator/curator-client/5.2.0/curator-client-5.2.0.jar:/Users/andying/.m2/repository/org/apache/zookeeper/zookeeper/3.6.3/zookeeper-3.6.3.jar:/Users/andying/.m2/repository/org/apache/zookeeper/zookeeper-jute/3.6.3/zookeeper-jute-3.6.3.jar:/Users/andying/.m2/repository/org/apache/yetus/audience-annotations/0.5.0/audience-annotations-0.5.0.jar:/Users/andying/.m2/repository/io/netty/netty-handler/4.1.92.Final/netty-handler-4.1.92.Final.jar:/Users/andying/.m2/repository/io/netty/netty-common/4.1.92.Final/netty-common-4.1.92.Final.jar:/Users/andying/.m2/repository/io/netty/netty-resolver/4.1.92.Final/netty-resolver-4.1.92.Final.jar:/Users/andying/.m2/repository/io/netty/netty-buffer/4.1.92.Final/netty-buffer-4.1.92.Final.jar:/Users/andying/.m2/repository/io/netty/netty-transport/4.1.92.Final/netty-transport-4.1.92.Final.jar:/Users/andying/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.92.Final/netty-transport-native-unix-common-4.1.92.Final.jar:/Users/andying/.m2/repository/io/netty/netty-codec/4.1.92.Final/netty-codec-4.1.92.Final.jar:/Users/andying/.m2/repository/io/netty/netty-transport-native-epoll/4.1.92.Final/netty-transport-native-epoll-4.1.92.Final.jar:/Users/andying/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.92.Final/netty-transport-classes-epoll-4.1.92.Final.jar:/Users/andying/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/andying/.m2/repository/com/google/guava/guava/27.0.1-jre/guava-27.0.1-jre.jar:/Users/andying/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/andying/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/andying/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/andying/.m2/repository/org/checkerframework/checker-qual/2.5.2/checker-qual-2.5.2.jar:/Users/andying/.m2/repository/com/google/errorprone/error_prone_annotations/2.2.0/error_prone_annotations-2.2.0.jar:/Users/andying/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/andying/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.17/animal-sniffer-annotations-1.17.jar:/Users/andying/.m2/repository/org/projectlombok/lombok/1.18.26/lombok-1.18.26.jar:/Users/andying/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/andying/.m2/repository/org/springframework/spring-core/5.3.27/spring-core-5.3.27.jar:/Users/andying/.m2/repository/org/springframework/spring-jcl/5.3.27/spring-jcl-5.3.27.jar:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar:/Users/andying/Library/Caches/JetBrains/IntelliJIdea2024.2/captureAgent/debugger-agent.jar
+24-10-06.21:52:20.703 [main            ] INFO  ZooKeeper              - Client environment:java.library.path=/Users/andying/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+24-10-06.21:52:20.703 [main            ] INFO  ZooKeeper              - Client environment:java.io.tmpdir=/var/folders/yq/g2rxn21s1xd_zpdz13m61nnh0000gn/T/
+24-10-06.21:52:20.703 [main            ] INFO  ZooKeeper              - Client environment:java.compiler=<NA>
+24-10-06.21:52:20.703 [main            ] INFO  ZooKeeper              - Client environment:os.name=Mac OS X
+24-10-06.21:52:20.703 [main            ] INFO  ZooKeeper              - Client environment:os.arch=x86_64
+24-10-06.21:52:20.704 [main            ] INFO  ZooKeeper              - Client environment:os.version=10.16
+24-10-06.21:52:20.704 [main            ] INFO  ZooKeeper              - Client environment:user.name=andying
+24-10-06.21:52:20.704 [main            ] INFO  ZooKeeper              - Client environment:user.home=/Users/andying
+24-10-06.21:52:20.704 [main            ] INFO  ZooKeeper              - Client environment:user.dir=/Users/andying/github/maloong-zhang/snowflake
+24-10-06.21:52:20.704 [main            ] INFO  ZooKeeper              - Client environment:os.memory.free=571MB
+24-10-06.21:52:20.704 [main            ] INFO  ZooKeeper              - Client environment:os.memory.max=14564MB
+24-10-06.21:52:20.704 [main            ] INFO  ZooKeeper              - Client environment:os.memory.total=694MB
+24-10-06.21:52:20.706 [main            ] INFO  ZooKeeper              - Initiating client connection, connectString=zookeeper:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@181b8c4b
+24-10-06.21:52:20.709 [main            ] INFO  X509Util               - Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation
+24-10-06.21:52:20.713 [main            ] INFO  ClientCnxnSocket       - jute.maxbuffer value is 1048575 Bytes
+24-10-06.21:52:20.717 [main            ] INFO  ClientCnxn             - zookeeper.request.timeout value is 0. feature enabled=false
+24-10-06.21:52:20.723 [main            ] INFO  CuratorFrameworkImpl   - Default schema
+24-10-06.21:52:20.933 [main-SendThread()] ERROR StaticHostProvider     - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper: nodename nor servname provided, or not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1207)
+24-10-06.21:52:20.937 [main-SendThread(zookeeper:2181)] WARN  ClientCnxn             - Session 0x0 for sever zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1161)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1210)
+24-10-06.21:52:22.050 [main-SendThread(zookeeper:2181)] ERROR StaticHostProvider     - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1207)
+24-10-06.21:52:22.053 [main-SendThread(zookeeper:2181)] WARN  ClientCnxn             - Session 0x0 for sever zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1161)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1210)
+24-10-06.21:52:23.161 [main-SendThread(zookeeper:2181)] ERROR StaticHostProvider     - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1207)
+24-10-06.21:52:23.165 [main-SendThread(zookeeper:2181)] WARN  ClientCnxn             - Session 0x0 for sever zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1161)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1210)
+24-10-06.21:52:24.272 [main-SendThread(zookeeper:2181)] ERROR StaticHostProvider     - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1207)
+24-10-06.21:52:24.274 [main-SendThread(zookeeper:2181)] WARN  ClientCnxn             - Session 0x0 for sever zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1161)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1210)
+24-10-06.21:52:25.386 [main-SendThread(zookeeper:2181)] ERROR StaticHostProvider     - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1207)
+24-10-06.21:52:25.391 [main-SendThread(zookeeper:2181)] WARN  ClientCnxn             - Session 0x0 for sever zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1161)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1210)
+24-10-06.21:52:26.501 [main-SendThread(zookeeper:2181)] ERROR StaticHostProvider     - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1207)
+24-10-06.21:52:26.503 [main-SendThread(zookeeper:2181)] WARN  ClientCnxn             - Session 0x0 for sever zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1161)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1210)
+24-10-06.21:52:27.617 [main-SendThread(zookeeper:2181)] ERROR StaticHostProvider     - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1207)
+24-10-06.21:52:27.622 [main-SendThread(zookeeper:2181)] WARN  ClientCnxn             - Session 0x0 for sever zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1161)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1210)
+24-10-06.21:52:28.733 [main-SendThread(zookeeper:2181)] ERROR StaticHostProvider     - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1207)
+24-10-06.21:52:28.735 [main-SendThread(zookeeper:2181)] WARN  ClientCnxn             - Session 0x0 for sever zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1161)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1210)
+24-10-06.21:52:29.844 [main-SendThread(zookeeper:2181)] ERROR StaticHostProvider     - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1207)
+24-10-06.21:52:29.845 [main-SendThread(zookeeper:2181)] WARN  ClientCnxn             - Session 0x0 for sever zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1161)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1210)
+24-10-06.21:52:30.958 [main-SendThread(zookeeper:2181)] ERROR StaticHostProvider     - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper: nodename nor servname provided, or not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1207)
+24-10-06.21:52:30.958 [main-SendThread(zookeeper:2181)] WARN  ClientCnxn             - Session 0x0 for sever zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1161)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1210)
+24-10-06.21:52:32.067 [main-SendThread(zookeeper:2181)] ERROR StaticHostProvider     - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1207)
+24-10-06.21:52:32.077 [main-SendThread(zookeeper:2181)] WARN  ClientCnxn             - Session 0x0 for sever zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1161)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1210)
+24-10-06.21:52:33.186 [main-SendThread(zookeeper:2181)] ERROR StaticHostProvider     - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1207)
+24-10-06.21:52:33.189 [main-SendThread(zookeeper:2181)] WARN  ClientCnxn             - Session 0x0 for sever zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1161)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1210)
+24-10-06.21:52:34.300 [main-SendThread(zookeeper:2181)] ERROR StaticHostProvider     - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1207)
+24-10-06.21:52:34.301 [main-SendThread(zookeeper:2181)] WARN  ClientCnxn             - Session 0x0 for sever zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1161)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1210)
+24-10-06.21:52:35.412 [main-SendThread(zookeeper:2181)] ERROR StaticHostProvider     - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1207)
+24-10-06.21:52:35.414 [main-SendThread(zookeeper:2181)] WARN  ClientCnxn             - Session 0x0 for sever zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1161)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1210)
+24-10-06.21:52:36.531 [main-SendThread(zookeeper:2181)] ERROR StaticHostProvider     - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1207)
+24-10-06.21:52:36.538 [main-SendThread(zookeeper:2181)] WARN  ClientCnxn             - Session 0x0 for sever zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1161)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1210)
+24-10-06.21:52:37.658 [main-SendThread(zookeeper:2181)] ERROR StaticHostProvider     - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1207)
+24-10-06.21:52:37.662 [main-SendThread(zookeeper:2181)] WARN  ClientCnxn             - Session 0x0 for sever zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1161)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1210)
+24-10-06.21:52:38.771 [main-SendThread(zookeeper:2181)] ERROR StaticHostProvider     - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1207)
+24-10-06.21:52:38.773 [main-SendThread(zookeeper:2181)] WARN  ClientCnxn             - Session 0x0 for sever zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1161)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1210)
+24-10-06.21:52:39.883 [main-SendThread(zookeeper:2181)] ERROR StaticHostProvider     - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1207)
+24-10-06.21:52:39.885 [main-SendThread(zookeeper:2181)] WARN  ClientCnxn             - Session 0x0 for sever zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1161)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1210)
+24-10-06.21:52:41.004 [main-SendThread(zookeeper:2181)] ERROR StaticHostProvider     - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper: nodename nor servname provided, or not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1207)
+24-10-06.21:52:41.005 [main-SendThread(zookeeper:2181)] WARN  ClientCnxn             - Session 0x0 for sever zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1161)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1210)
+24-10-06.21:52:42.116 [main-SendThread(zookeeper:2181)] ERROR StaticHostProvider     - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1207)
+24-10-06.21:52:42.117 [main-SendThread(zookeeper:2181)] WARN  ClientCnxn             - Session 0x0 for sever zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1161)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1210)
+24-10-06.21:52:42.798 [Curator-Framework-0] INFO  ConnectionStateManager - State change: SUSPENDED
+24-10-06.21:52:42.800 [Curator-Framework-0] ERROR CuratorFrameworkImpl   - Background operation retry gave up
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:102)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.checkBackgroundRetry(CuratorFrameworkImpl.java:885)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.performBackgroundOperation(CuratorFrameworkImpl.java:1033)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.backgroundOperationsLoop(CuratorFrameworkImpl.java:986)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.access$300(CuratorFrameworkImpl.java:97)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl$4.call(CuratorFrameworkImpl.java:376)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+24-10-06.21:52:42.813 [Curator-Framework-0] ERROR CuratorFrameworkImpl   - Background retry gave up
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.performBackgroundOperation(CuratorFrameworkImpl.java:1015)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.backgroundOperationsLoop(CuratorFrameworkImpl.java:986)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.access$300(CuratorFrameworkImpl.java:97)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl$4.call(CuratorFrameworkImpl.java:376)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+24-10-06.21:52:43.227 [main-SendThread(zookeeper:2181)] ERROR StaticHostProvider     - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1207)
+24-10-06.21:52:43.228 [main-SendThread(zookeeper:2181)] WARN  ClientCnxn             - Session 0x0 for sever zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1161)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1210)
+24-10-06.21:52:44.341 [main-SendThread(zookeeper:2181)] ERROR StaticHostProvider     - Unable to resolve address: zookeeper:2181
+java.net.UnknownHostException: zookeeper
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1281)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1207)
+24-10-06.21:52:44.349 [main-SendThread(zookeeper:2181)] WARN  ClientCnxn             - Session 0x0 for sever zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1161)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1210)

@@ -1,0 +1,64 @@
+version: '3'
+services:
+  zookeeper:
+    image: zookeeper:3.7.1
+    container_name: zookeeper
+    ports:
+      - "2181:2181"
+    networks:
+      - snowflake-network
+
+  snowflake-app1:
+    build: ..
+    container_name: snowflake-app1
+    environment:
+      - SERVER_PORT=8080
+    depends_on:
+      - zookeeper
+    networks:
+      - snowflake-network
+
+  snowflake-app2:
+    build: ..
+    container_name: snowflake-app2
+    environment:
+      - SERVER_PORT=8080
+    depends_on:
+      - zookeeper
+    networks:
+      - snowflake-network
+
+  snowflake-app3:
+    build: ..
+    container_name: snowflake-app3
+    environment:
+      - SERVER_PORT=8080
+    depends_on:
+      - zookeeper
+    networks:
+      - snowflake-network
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx-loadbalancer
+    restart: always
+    ports:
+      - '443:443'
+      - '80:80'
+    volumes:
+      - ./nginx/logs:/var/log/nginx
+      - ./nginx/html:/usr/share/nginx/html
+      - ./nginx/conf/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/conf/conf.d:/etc/nginx/conf.d
+      - ./nginx/ssl:/etc/nginx/ssl/
+    privileged: true
+    depends_on:
+      - snowflake-app1
+      - snowflake-app2
+      - snowflake-app3
+    networks:
+      - snowflake-network
+
+networks:
+  snowflake-network:
+    driver: bridge
