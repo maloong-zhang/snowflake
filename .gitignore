@@ -41,3 +41,9 @@ build/
 !/data/log/log_error.log
 
 !/data/log/log_info.log
+!/data/log/log_error.log
+
+!/data/log/log_info.log
+!/data/log/
+!/data/
+!/target/

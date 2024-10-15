@@ -1,0 +1,3 @@
+ae/zerotone/snowflake/Application.class
+ae/zerotone/snowflake/SnowflakeIdGenerator.class
+ae/zerotone/snowflake/ZookeeperWorkerIdProvider.class
